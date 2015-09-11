@@ -15,7 +15,7 @@ _Clone and open index.html in your browser._
 ## Technologies Used
 
 _This project makes use of:
-[Mocha](https://mochajs.org/), and
+[Mocha](https://mochajs.org/) and
 [Chai](http://chaijs.com/) as testing-frameworks.
 And has a dependency for jQuery._
 
