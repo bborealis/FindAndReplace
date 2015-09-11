@@ -16,7 +16,15 @@ describe('findAndReplace', function() {
     });
 
     it("enters a three word input string with punctuation, a find string, and a replace string and recieves an ouput of the original input string with the word replaced. ", function() {
-        expect(findAndReplace("Hello mister world.", "world", "universe")).to.be.equal("Hello mister universe.");
+        expect(findAndReplace("Hello mister world!", "world", "universe")).to.be.equal("Hello mister universe!");
+    });
+
+    it("enters a three word input string with punctuation, a find punctuation, and a replace punctuation and recieves an ouput of the original input string with the word replaced. ", function() {
+        expect(findAndReplace("Hello mister world!", "!", "?")).to.be.equal("Hello mister world?");
+    });
+
+    it("enters a three word input string with a repeat word, a find string, and a replace string and recieves an ouput of the original input string with ALL instances of the word replaced. ", function() {
+        expect(findAndReplace("hello mister hello", "hello", "goodbye")).to.be.equal("goodbye mister goodbye");
     });
 
 
