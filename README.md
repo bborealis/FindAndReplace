@@ -7,6 +7,7 @@
 ## Description
 
 _User enters a string and then chooses a word to find and replace with another word._
+_User is able to find and replace multiple cases of the same word._
 
 ## Setup
 
@@ -16,9 +17,8 @@ _Clone and open index.html in your browser._
 
 _This project makes use of:
 [Mocha](https://mochajs.org/) and
-[Chai](http://chaijs.com/) as testing-frameworks.
-And has a dependency for jQuery._
-
+[Chai](http://chaijs.com/) as testing-frameworks
+and has a dependency for jQuery._
 
 ### Legal
 

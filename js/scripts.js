@@ -1,9 +1,11 @@
 var findAndReplace = function(originalString, wordFind, wordReplace) {
-    var re = new RegExp('(^|\\s|\\(|\'|"|,|;)' + wordFind + '($|\\s|\\)|\\.|\'|"|!|,|;|\\?)', 'gi');
-    var finalString = originalString.replace((re + " "), wordReplace);
+
+//    var re = new RegExp('(^|\|\\(|\'|"|,|;)' + wordFind + '($|\|\\)|\\.|\'|"|!|,|;|\\?)', 'gi');
+    var re = new RegExp('(\\b)' + wordFind + '(\\b)', 'gi');
+    var finalString = originalString.replace(re, wordReplace);
 
     for (var i = 0; i < 1000; i++) {
-        var finalString = finalString.replace((re + " "), wordReplace);
+        var finalString = finalString.replace(re, wordReplace);
     };
 
     return finalString;
