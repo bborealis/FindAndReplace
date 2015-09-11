@@ -1,9 +1,9 @@
 var findAndReplace = function(originalString, wordFind, wordReplace) {
-
-    var finalString = originalString.replace(wordFind, wordReplace);
+    var re = new RegExp('(^|\\s|\\(|\'|"|,|;)' + wordFind + '($|\\s|\\)|\\.|\'|"|!|,|;|\\?)', 'gi');
+    var finalString = originalString.replace((re + " "), wordReplace);
 
     for (var i = 0; i < 1000; i++) {
-        var finalString = finalString.replace(wordFind, wordReplace);
+        var finalString = finalString.replace((re + " "), wordReplace);
     };
 
     return finalString;
