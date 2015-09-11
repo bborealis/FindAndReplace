@@ -1,12 +1,12 @@
-# _"Title"_
+# _Find and Replace_
 
-##### _"Brief Description" 0/00/2015_
+##### _Find and replace a word 09/11/2015_
 
 #### By Brian Borealis
 
 ## Description
 
-_"Insert Long Description Here"_
+_User enters a string and then chooses a word to find and replace with another word._
 
 ## Setup
 
