@@ -1,6 +1,6 @@
 var findAndReplace = function(originalString, wordFind, wordReplace) {
 
-//    var re = new RegExp('(^|\|\\(|\'|"|,|;)' + wordFind + '($|\|\\)|\\.|\'|"|!|,|;|\\?)', 'gi');
+    //    var re = new RegExp('(^|\|\\(|\'|"|,|;)' + wordFind + '($|\|\\)|\\.|\'|"|!|,|;|\\?)', 'gi');
     var re = new RegExp('(\\b)' + wordFind + '(\\b)', 'gi');
     var finalString = originalString.replace(re, wordReplace);
 
