@@ -1,4 +1,6 @@
 var findAndReplace = function(originalString, wordFind, wordReplace) {
-    return "";
+
+    var finalString = originalString.replace(wordFind, wordReplace);
+    return finalString;
 
 };
